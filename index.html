@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="base.css" />
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cousine">
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<title>alan longstaff</title>
-</head>
-<body>
-	<h1>Hello, world.</h1>
-</body>
-</html>
+---
+layout: default
+title: alan longstaff
+---
+
+<h1>Hello, world.</h1>
+<ul class="posts">
+{% for post in site.posts %}
+	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
