@@ -1,9 +1,19 @@
 ---
-layout: default
+layout: gallery
 title: alan longstaff
 ---
 
-<h1 class="header">Hello, world.</h1>
+<h1 class="header">a gallery:</h1>
+
+<a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1small.png" title="image one" /></a>
+<a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2small.png" title="image two" /></a>
+
+<script>
+    $(document).ready(function() {
+        $('.fancybox').fancybox();
+    });
+</script>
+
 	<ul class="posts">
 		{% for post in site.posts %}
 			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
