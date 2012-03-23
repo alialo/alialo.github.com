@@ -2,6 +2,9 @@ body {
 	font-family: 'Cousine', sans-serif;
 	text-align: center;
 }
-.hello {
-	line-height: 20em;
+ul {
+	list-style-type: none;
+}
+.header {
+	margin-top: 200px;
 }
