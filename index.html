@@ -3,29 +3,25 @@ layout: default
 title: the personal website of alan longstaff
 ---
 
-<!--<h1 class="header">a gallery:</h1>
-
-<a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1s.png" title="image one" /></a>
-<a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a>
-
-<script>
-		$(document).ready(function() {
-				$(".fancybox").fancybox({
-					nextEffect: "fade",
-					prevEffect: "fade"
-				});
-		});
-</script>-->
-
 <h1>alan longstaff</h1>
 <div id="container">
 	<section id="blog">
-		<ul class="posts">
-			{% for post in site.posts %}
-				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ul>
+		{% for post in site.posts %}
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<time>{{ post.date | date_to_string }}</time>
+			{{ post.content }}
+		{% endfor %}
 	</section>
 	<section id="portfolio">
+		<a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1s.png" title="image one" /></a>
+		<a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a>
+		<script>
+				$(document).ready(function() {
+						$(".fancybox").fancybox({
+							nextEffect: "fade",
+							prevEffect: "fade"
+						});
+				});
+		</script>
 	</portfolio>
 </div>

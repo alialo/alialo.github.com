@@ -1,5 +1,5 @@
 body {
-	font-family: 'Neuton', sans-serif;
+	font-family: serif;
 	font-size: 1em;
 	background-color: #ecebe8;
 	margin: 0;
@@ -15,8 +15,8 @@ h1 {
 	margin: 20px 0;
 }
 
-ul {
-	list-style-type: none;
+time {
+	float: right;
 }
 
 .header {
@@ -30,8 +30,8 @@ ul {
 	display: block;
 	float: left;
 	width: 50%;
-	height: 180px;
 	padding: 20px;
+	overflow: auto;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -54,6 +54,7 @@ ul {
 	width: 50%;
 	height: 200px;
 	background-color: #ff7676;
+	padding: 20px;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
