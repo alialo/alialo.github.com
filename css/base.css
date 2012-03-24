@@ -1,23 +1,40 @@
 body {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	background-color: #ecebe8;
+	color: #555;
 	margin: 0;
 	padding: 0;
 }
 
 h1 {
-	margin: 20px auto;
 	max-width: 1136px;
-	font-family: 'Lilita One', serif;
+	margin: 20px auto;
+	font-family: "Lilita One", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 4em;
-	color: rgb(69,76,83);
-	text-shadow: 0 4px 0 #d2d1ce;
+	color: #454c53;
+	text-shadow: 0 2px 0px #d2d1ce;
 	text-align: center;
 }
 
+h1 a {
+	color: #454c53;
+}
+
+h1 a:hover {
+	position: relative;
+	bottom: 2px;
+	text-shadow: 0 6px 0px #d2d1ce;
+}
+
+h1 a:active {
+	position: relative;
+	top: 2px;
+	text-shadow: none;
+}
+
 a {
-	color: #08c;
+	color: #777;
 	text-decoration: none;
 }
 
@@ -33,21 +50,34 @@ a {
 	width: 50%;
 	max-width: 568px;
 	padding: 20px;
+	color: #999;
+	background-color: #fff;
+	border: 1px solid #d2d1ce;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	background-color: #fff;
-	border: 1px solid #d2d1ce;
 
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
 
-	-webkit-box-shadow: 0px 1px 2px #DADEE1;
-	-moz-box-shadow: 0px 1px 2px #DADEE1;
-	box-shadow: 0px 1px 2px #DADEE1;
+	-webkit-box-shadow: 0px 2px 0px #dadee1;
+	-moz-box-shadow: 0px 2px 0px #dadee1;
+	box-shadow: 0px 2px 0px #dadee1;
+}
+
+#blog:hover {
+	color: #222;
+}
+
+#blog:hover a {
+	color: #08c;
+}
+
+#blog a:hover {
+	border-bottom: 2px solid #08c;
 }
 
 #portfolio {
@@ -76,21 +106,47 @@ ul {
 	float: left;
 	margin: 0 0 20px 20px;
 	padding: 10px 10px 6px 10px;
+	background-color: #fff;
+	border: 1px solid #d2d1ce;
 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 
-	background: #fff;
-	border: 1px solid #d2d1ce;
+	-webkit-box-shadow: 0px 2px 0px #DADEE1;
+	-moz-box-shadow: 0px 2px 0px #DADEE1;
+	box-shadow: 0px 2px 0px #DADEE1;
+}
 
-	-webkit-box-shadow: 0px 1px 2px #DADEE1;
-	-moz-box-shadow: 0px 1px 2px #DADEE1;
-	box-shadow: 0px 1px 2px #DADEE1;
+.gallery li:hover {
+	position: relative;
+	bottom: 2px;
+
+	-webkit-box-shadow: 0px 6px 0px #DADEE1;
+	-moz-box-shadow: 0px 6px 0px #DADEE1;
+	box-shadow: 0px 6px 0px #DADEE1;
+}
+
+.gallery li:active {
+	position: relative;
+	top: 2px;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .gallery img {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+}
+
+/*-------- post.html -------- */
+
+#post {
+	position: relative;
+	margin: 80px auto;
+	padding: 40px;
+	max-width: 1136px;
 }
