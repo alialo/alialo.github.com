@@ -1,5 +1,5 @@
 body {
-	font-family: serif;
+	font-family: sans-serif;
 	font-size: 1em;
 	background-color: #ecebe8;
 	margin: 0;
@@ -7,31 +7,32 @@ body {
 }
 
 h1 {
+	margin: 20px auto;
+	max-width: 1136px;
 	font-family: 'Lilita One', serif;
 	font-size: 4em;
 	color: rgb(69,76,83);
 	text-shadow: 0 4px 0 #d2d1ce;
 	text-align: center;
-	margin: 20px 0;
 }
 
-time {
-	float: right;
-}
-
-.header {
-	margin-top: 200px;
+a {
+	color: #08c;
+	text-decoration: none;
 }
 
 #container {
+	margin: 0px auto;
 	padding: 20px;
+	overflow: auto;
+	max-width: 1136px;
 }
 #blog {
 	display: block;
 	float: left;
 	width: 50%;
+	max-width: 568px;
 	padding: 20px;
-	overflow: auto;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -52,12 +53,44 @@ time {
 #portfolio {
 	float: right;
 	width: 50%;
-	height: 200px;
-	background-color: #ff7676;
-	padding: 20px;
+	max-width: 568px;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.details {
+	text-align: right;
+	color: #999;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.gallery li {
+	float: left;
+	margin: 0 0 20px 20px;
+	padding: 10px 10px 6px 10px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: #fff;
+	border: 1px solid #d2d1ce;
+
+	-webkit-box-shadow: 0px 1px 2px #DADEE1;
+	-moz-box-shadow: 0px 1px 2px #DADEE1;
+	box-shadow: 0px 1px 2px #DADEE1;
+}
+
+.gallery img {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }

@@ -3,18 +3,24 @@ layout: default
 title: the personal website of alan longstaff
 ---
 
-<h1>alan longstaff</h1>
+<h1 class="header">alan longstaff</h1>
 <div id="container">
 	<section id="blog">
 		{% for post in site.posts %}
-			<a href="{{ post.url }}">{{ post.title }}</a>
-			<time>{{ post.date | date_to_string }}</time>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 			{{ post.content }}
+			<aside class="details">posted on the <time>{{ post.date | date_to_string }}</time></aside>
 		{% endfor %}
 	</section>
 	<section id="portfolio">
-		<a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1s.png" title="image one" /></a>
-		<a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a>
+		<ul class="gallery">
+			<li><a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1s.png" title="image one" /></a></li>
+			<li><a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a></li>
+			<li><a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1s.png" title="image one" /></a></li>
+			<li><a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a></li>
+			<li><a class="fancybox" rel="group" href="/img/img1.png"><img src="/img/img1s.png" title="image one" /></a></li>
+			<li><a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a></li>
+		</ul>
 		<script>
 				$(document).ready(function() {
 						$(".fancybox").fancybox({
