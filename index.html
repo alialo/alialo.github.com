@@ -9,16 +9,23 @@ title: the personal website of alan longstaff
 <a class="fancybox" rel="group" href="/img/img2.png"><img src="/img/img2s.png" title="image two" /></a>
 
 <script>
-    $(document).ready(function() {
-        $(".fancybox").fancybox({
-        	nextEffect: "fade",
-        	prevEffect: "fade"
-        });
-    });
+		$(document).ready(function() {
+				$(".fancybox").fancybox({
+					nextEffect: "fade",
+					prevEffect: "fade"
+				});
+		});
 </script>-->
 
-	<ul class="posts">
-		{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
+<h1>alan longstaff</h1>
+<div id="container">
+	<section id="blog">
+		<ul class="posts">
+			{% for post in site.posts %}
+				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</section>
+	<section id="portfolio">
+	</portfolio>
+</div>
