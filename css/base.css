@@ -104,9 +104,9 @@ a {
 	background-color: #fff;
 	border: 1px solid #d2d1ce;
 
-	-webkit-box-shadow: 0 2px 0 #dadee1;
-	-moz-box-shadow: 0 2px 0 #dadee1;
-	box-shadow: 0 2px 0 #dadee1;
+	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
+	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
+	box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
