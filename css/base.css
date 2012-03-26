@@ -165,9 +165,9 @@ ul {
 	position: relative;
 	bottom: 2px;
 
-	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #777;
-	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #777;
-	box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #777;
+	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #888;
+	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #888;
+	box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #888;
 }
 
 .gallery li:active {
