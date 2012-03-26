@@ -49,6 +49,10 @@ a {
 	text-decoration: none;
 }
 
+a img {
+	border: none;
+}
+
 .bubble {
 	background-color: #08c;
 	color: #fff;
