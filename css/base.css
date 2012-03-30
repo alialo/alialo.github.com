@@ -243,13 +243,15 @@ border-radius: 3px;
 	border-left-width: 0;
 }
 
-.pagination a:hover {
+.pagination a:hover, .active a {
 	background-color: whiteSmoke;
 }
 
-.disabled a, .active a,
-.disabled a:hover, .active a:hover {
+.disabled a, .disabled a:hover,
+.active a, .active a:hover {
 	color: #999;
-	background-color: transparent;
 	cursor: default;
+}
+.disabled a:hover {
+	background-color: transparent;
 }
