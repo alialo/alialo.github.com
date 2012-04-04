@@ -1,0 +1,7 @@
+---
+layout: post
+title: Image One
+category: images
+img: img1.png
+small: img1s.png
+---

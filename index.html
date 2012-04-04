@@ -65,12 +65,9 @@ title: the personal website of alan longstaff
 	</section>
 	<section id="portfolio">
 		<ul class="gallery">
-			<li><a class="fancybox" rel="group" href="/img/img1.png" title="image one"><img src="/img/img1s.png" /></a></li>
-			<li><a class="fancybox" rel="group" href="/img/img2.png" title="image two"><img src="/img/img2s.png" /></a></li>
-			<li><a class="fancybox" rel="group" href="/img/img1.png" title="image one"><img src="/img/img1s.png" /></a></li>
-			<li><a class="fancybox" rel="group" href="/img/img2.png" title="image two"><img src="/img/img2s.png" /></a></li>
-			<li><a class="fancybox" rel="group" href="/img/img1.png" title="image one"><img src="/img/img1s.png" /></a></li>
-			<li><a class="fancybox" rel="group" href="/img/img2.png" title="image two"><img src="/img/img2s.png" /></a></li>
+			{% for post in site.categories.images %}
+				<li><a class="fancybox" rel="group" href="/img/{{ post.img }}" title="{{ post.title }}"><img src="/img/{{ post.small }}" /></a></li>
+			{% endfor %}
 		</ul>
 		<script>
 			$(document).ready(function() {
