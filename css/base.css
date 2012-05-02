@@ -278,6 +278,7 @@ border-radius: 3px;
 	#portfolio {
 		float: none;
 		width: auto;
+		max-width: none;
 	}
 	h1 {
 		margin-top: 10px;
