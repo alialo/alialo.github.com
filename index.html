@@ -5,14 +5,16 @@ title: the personal website of alan longstaff
 
 <header>
 	<h1 class="header"><a href="#">alan longstaff</a></h1>
-	<h2 class="subhead"><span class="bubble red">musings</span> and <span class="bubble">portfolio</span> herein</h2>
+	<h2 class="subhead"><span class="bubble red">musings</span> and <span class="bubble">portfolio</span></h2>
 </header>
 <div id="container">
 	<section id="blog">
 		{% for post in paginator.posts %}
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			{{ post.content }}
-			<aside class="details">posted on the <time>{{ post.date | date_to_string }}</time></aside>
+			{% unless post.category == "images" %} 
+				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				{{ post.content }}
+				<aside class="details">posted on the <time>{{ post.date | date_to_string }}</time></aside>
+			{% endunless %}
 		{% endfor %}
 		<aside class="pagination">
 			<ul>
