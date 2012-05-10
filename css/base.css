@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	padding: 20px;
+	padding: 40px 40px 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	background-color: #ecebe8;
@@ -20,6 +20,7 @@ header h2 {
 .subhead {
 	margin-bottom: 0;
 }
+
 h1 {
 	margin: 0;
 	margin-bottom: 20px;
@@ -113,6 +114,7 @@ a img {
 	float: left;
 	width: 50%;
 	max-width: 568px;
+	margin-bottom: 40px;
 	padding: 20px;
 	background-color: #fff;
 	border: 1px solid #d2d1ce;
