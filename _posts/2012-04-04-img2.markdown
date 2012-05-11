@@ -2,6 +2,5 @@
 layout: post
 title: Image Two
 category: images
-img: img2.png
-small: img2s.png
+img: img2
 ---
