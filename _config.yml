@@ -1,2 +1,3 @@
 auto:        true
-paginate:    10
+improved_paginate:    2
+improved_paginate_exclude: images
