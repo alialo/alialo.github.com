@@ -138,6 +138,7 @@ a img {
 
 #portfolio {
 	float: right;
+	overflow: auto;
 	width: 50%;
 	max-width: 568px;
 
