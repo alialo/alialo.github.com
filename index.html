@@ -9,61 +9,13 @@ title: the personal website of alan longstaff
 </header>
 <div id="container">
 	<section id="blog">
-		{% for post in paginator.posts %}
+		{% for post in site.posts %}
 			{% unless post.category == "images" %} 
 				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 				{{ post.content }}
 				<aside class="details">posted on the <time>{{ post.date | date_to_string }}</time></aside>
 			{% endunless %}
 		{% endfor %}
-		<aside class="pagination">
-			<ul>
-				{% if paginator.previous_page %}
-					{% if paginator.previous_page == 1 %}
-						<li>
-							<a href="/">«</a>
-						</li>
-					{% else %}
-						<li>
-							<a href="/page{{paginator.previous_page}}">«</a>
-						</li>
-					{% endif %}
-				{% else %}
-					<li class="disabled">
-						<a href="#">«</a>
-					</li>
-				{% endif %}
-				{% if paginator.page == 1 %}
-					<li class="active">
-						<a href="#">1</a>
-					</li>
-				{% else %}
-					<li>
-						<a href="/">1</a>
-					</li>
-				{% endif %}
-				{% for count in (2..paginator.total_pages) %}
-					{% if count == paginator.page %}
-						<li class="active">
-							<a href="#">{{count}}</a>
-						</li>
-					{% else %}
-						<li>
-							<a href="/page{{count}}">{{count}}</a>
-						</li>
-					{% endif %}
-				{% endfor %}
-				{% if paginator.next_page %}
-					<li>
-						<a href="/page{{paginator.next_page}}">»</a>
-					</li>
-				{% else %}
-					<li class="disabled">
-						<a href="#">»</a>
-					</li>
-				{% endif %}
-			</ul>
-		</aside>
 	</section>
 	<section id="portfolio">
 		<ul class="gallery">
