@@ -10,7 +10,7 @@ title: the personal website of alan longstaff
 <div id="container">
 	<section id="blog">
 		{% for post in site.posts %}
-			{% unless post.category == "images" %} 
+			{% unless post.category == "portfolio" %} 
 				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 				{{ post.content }}
 				<aside class="details">posted on the <time>{{ post.date | date_to_string }}</time></aside>
@@ -19,8 +19,8 @@ title: the personal website of alan longstaff
 	</section>
 	<section id="portfolio">
 		<ul class="gallery">
-			{% for post in site.categories.images %}
-				<li><a class="fancybox" rel="group" href="/img/{{ post.image }}.png" title="{{ post.title }}"><img src="/img/{{ post.image }}-s.png" data-description="{{ post.description }}"/></a></li>
+			{% for post in site.categories.portfolio %}
+				<li><a class="fancybox" rel="group" href="/img/{{ post.image }}.png" title="{{ post.info }}"><img src="/img/{{ post.image }}-s.png" title="{{ post.title }}"/></a></li>
 			{% endfor %}
 		</ul>
 		<script>

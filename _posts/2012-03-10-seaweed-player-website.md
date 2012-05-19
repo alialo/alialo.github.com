@@ -1,9 +1,7 @@
 ---
 layout: gallery
 title: Seaweed Player Website
-category: images
+category: portfolio
 image: seaweed-site
-website: http://www.seaweedplayer.com
+info: The <a href='http://www.seaweedplayer.com'>Seaweed Player</a> website. Photoshop / HTML / CSS / Twitter Bootstrap
 ---
-
-test3

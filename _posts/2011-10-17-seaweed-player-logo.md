@@ -1,9 +1,7 @@
 ---
 layout: gallery
 title: Seaweed Player Logo
-category: images
+category: portfolio
 image: seaweed-logo
-website: http://www.seaweedplayer.com
+info: The <a href='http://www.seaweedplayer.com'>Seaweed Player</a> logo. Simple colours and a recognisable shape - suited for the OSX dock. Photoshop
 ---
-
-test2
