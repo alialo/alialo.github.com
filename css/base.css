@@ -85,6 +85,10 @@ a img {
 	border-radius: 5px;
 }
 
+.bubble:hover {
+	color: #fff;
+}
+
 .red {
 	background-color: #b94a48;
 	text-shadow: 0 -1px 0 #772f2e;
