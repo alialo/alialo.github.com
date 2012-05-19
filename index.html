@@ -20,7 +20,7 @@ title: the personal website of alan longstaff
 	<section id="portfolio">
 		<ul class="gallery">
 			{% for post in site.categories.images %}
-				<li><a class="fancybox" rel="group" href="/img/{{ post.img }}.png" title="{{ post.title }}"><img src="/img/{{ post.img }}s.png" /></a></li>
+				<li><a class="fancybox" rel="group" href="/img/{{ post.image }}.png" title="{{ post.title }}"><img src="/img/{{ post.image }}-s.png" /></a></li>
 			{% endfor %}
 		</ul>
 		<script>
@@ -28,6 +28,12 @@ title: the personal website of alan longstaff
 				$(".fancybox").fancybox({
 					nextEffect: "fade",
 					prevEffect: "fade",
+					fitToView: true,
+					helpers:  {
+        		title : {
+            	type : "inside"
+        		}
+        	}
 				});
 			});
 		</script>

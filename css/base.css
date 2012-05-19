@@ -212,7 +212,7 @@ ul {
 
 /*----------- media queries -----------*/
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 647px) {
 	body {
 		padding: 20px 10px 0;
 	}
