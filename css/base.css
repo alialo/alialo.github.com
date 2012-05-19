@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 40px 40px 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	background-color: #ecebe8;
 	color: #555;
@@ -61,6 +61,10 @@ a:hover {
 
 a img {
 	border: none;
+}
+
+p {
+	line-height: 1.4em;
 }
 
 .bubble {
@@ -204,6 +208,11 @@ ul {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+}
+
+.email {
+	letter-spacing: -20px;
+	float: right;
 }
 
 /*-------- post.html -------- */
