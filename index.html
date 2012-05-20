@@ -20,22 +20,8 @@ title: the personal website of alan longstaff
 	<section id="portfolio">
 		<ul class="gallery">
 			{% for post in site.categories.portfolio %}
-				<li><a class="fancybox" rel="group" href="/img/{{ post.image }}.png" title="{{ post.info }}"><img src="/img/{{ post.image }}-s.png" title="{{ post.title }}"/></a></li>
+				<li><a class="fancybox" rel="group" href="/static/img/{{ post.image }}.png" title="{{ post.info }}"><img src="/static/img/{{ post.image }}-s.png" title="{{ post.title }}"/></a></li>
 			{% endfor %}
 		</ul>
-		<script>
-			$(document).ready(function() {
-				$(".fancybox").fancybox({
-					nextEffect: "fade",
-					prevEffect: "fade",
-					fitToView: true,
-					helpers:  {
-        		title : {
-            	type : "inside"
-        		}
-        	}
-				});
-			});
-		</script>
 	</section>
 </div>
