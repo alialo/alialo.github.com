@@ -20,7 +20,7 @@ title: the personal website of alan longstaff
 	<section id="portfolio">
 		<ul class="gallery">
 			{% for post in site.categories.portfolio %}
-				<li><a class="fancybox" rel="group" href="/static/img/{{ post.image }}.png" title="{{ post.info }}"><img src="/static/img/{{ post.image }}-s.png" title="{{ post.title }}"/></a></li>
+				<li><a rel="portfolio-image" href="/static/img/{{ post.image }}.png" title="{{ post.info }}"><img src="/static/img/{{ post.image }}-s.png" title="{{ post.title }}"/></a></li>
 			{% endfor %}
 		</ul>
 	</section>

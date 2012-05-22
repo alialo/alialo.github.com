@@ -1,12 +1,15 @@
 $(function() {
-	$(".fancybox").fancybox({
+	$("a[rel=portfolio-image]").fancybox({
 		nextEffect: "fade",
 		prevEffect: "fade",
 		fitToView: true,
-		helpers:  {
+		helpers : {
 			title : {
 				type : "inside"
 			}
+		}
+		onComplete:function() {
+			_gaq.push(['_trackEvent','Portfolio','View', $(this).children("img").attr("title")]);
 		}
 	});
 
