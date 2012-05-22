@@ -143,7 +143,11 @@ p {
 }
 
 #blog h2 {
-	margin-top: 0;
+	margin: 0;
+}
+
+#blog article:not(:first-of-type) h2 {
+	margin-top: 40px;
 }
 
 #blog img {
@@ -164,9 +168,8 @@ p {
 }
 
 .details {
-	text-align: right;
+	font-size: 0.9em;
 	color: #999;
-	margin-bottom: 12px;
 }
 
 ul {

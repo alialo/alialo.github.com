@@ -15,8 +15,8 @@ title: the personal website of alan longstaff
 			{% unless post.category == "portfolio" %}
 				<article>
 					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+					<time class="details" datetime="{{ post.date | date: "%Y-%m-%d" }}">Posted on {{ post.date | date: "%d %B %Y" }}</time>
 					{{ post.content }}
-					<aside class="details">posted on <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d %B %Y" }}</time></aside>
 				</article>
 			{% endunless %}
 		{% endfor %}
