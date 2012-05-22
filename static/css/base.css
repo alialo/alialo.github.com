@@ -150,6 +150,10 @@ p {
 	margin-top: 40px;
 }
 
+article p:last-of-type {
+	margin-bottom: 2px;
+}
+
 #blog img {
 	display: block;
 	margin: 0 auto;
