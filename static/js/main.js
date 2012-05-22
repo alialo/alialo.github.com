@@ -7,7 +7,7 @@ $(function() {
 			title : {
 				type : "inside"
 			}
-		}
+		},
 		onComplete:function() {
 			_gaq.push(['_trackEvent','Portfolio','View', $(this).children("img").attr("title")]);
 		}
