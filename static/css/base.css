@@ -228,6 +228,11 @@ ul {
 	padding: 80px;
 	max-width: 1136px;
 }
+#post img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
 
 /*----------- media queries -----------*/
 
