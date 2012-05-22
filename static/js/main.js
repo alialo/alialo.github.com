@@ -1,5 +1,5 @@
 $(function() {
-	$("a[rel=portfolio-image]").fancybox({
+	$("a[data-fancybox-group=portfolio-image]").fancybox({
 		nextEffect: "fade",
 		prevEffect: "fade",
 		fitToView: true,
