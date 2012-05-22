@@ -55,10 +55,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: #005580;
-}
-
 a img {
 	border: none;
 }
@@ -140,6 +136,10 @@ p {
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
+}
+
+#blog a:hover {
+	background-color: #c6e2f2;
 }
 
 #blog h2 {
