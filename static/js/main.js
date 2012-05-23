@@ -1,15 +1,15 @@
 $(function() {
-	$("a[data-fancybox-group=portfolio-image]").fancybox({
-		nextEffect: "fade",
-		prevEffect: "fade",
+	$('a[data-fancybox-group=portfolio-image]').fancybox({
+		nextEffect: 'fade',
+		prevEffect: 'fade',
 		fitToView: true,
 		helpers : {
 			title : {
-				type : "inside"
+				type : 'inside'
 			}
 		},
-		onComplete:function() {
-			_gaq.push(['_trackEvent','Portfolio','View', $(this).children("img").attr("title")]);
+		afterShow:function() {
+			_gaq.push(['_trackEvent','Portfolio','View', $(this).children('img').attr('title')]);
 		}
 	});
 
