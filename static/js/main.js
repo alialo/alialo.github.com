@@ -9,7 +9,7 @@ $(function() {
 			}
 		},
 		afterShow:function() {
-			_gaq.push(['_trackEvent','Portfolio','View', $(this).children('img').attr('title')]);
+			_gaq.push(['_trackEvent','Portfolio','View', $('a[href="' + this.href + '"]').children()[0].title]);
 		}
 	});
 
