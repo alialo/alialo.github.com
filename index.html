@@ -1,12 +1,14 @@
 ---
 layout: default
-title: the personal website of alan longstaff
+title: alanlongstaff.com - Web and Graphic Design based in the North East of England
 ---
 
 <header>
 	<hgroup>
-		<h1 class="header"><a href="#">alan longstaff</a></h1>
-		<h2 class="subhead"><a class="bubble red" href="#blog">musings</a> and <a class="bubble" href="#portfolio">portfolio</a></h2>
+		<h1 class="header"><a href="#">alanlongstaff.com</a></h1>
+		<h2 class="subhead">
+			<a class="bubble red" href="#blog" title="View Blog">bits</a> and <a class="bubble" href="#portfolio" title="View Work">pieces</a> (and <a class="email" href="mailto:alan@alanlongstaff.com" title="Get in touch">me</a>)
+		</h2>
 	</hgroup>
 </header>
 <div id="container">
@@ -24,7 +26,7 @@ title: the personal website of alan longstaff
 	<section id="portfolio">
 		<ul class="gallery">
 			{% for post in site.categories.portfolio %}
-				<li><a data-fancybox-group="portfolio-image" href="/static/img/{{ post.image }}.jpg" title="{{ post.info }}"><img src="/static/img/{{ post.image }}-s.jpg" title="{{ post.title }}"/></a></li>
+				<li><a data-fancybox-group="portfolio-image" href="/static/img/{{ post.image }}.jpg" title="{{ post.title }}"><img src="/static/img/{{ post.image }}-s.jpg" alt="{{ post.alt }}"/></a></li>
 			{% endfor %}
 		</ul>
 	</section>

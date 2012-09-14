@@ -14,6 +14,7 @@ header {
 
 header h2 {
 	margin-top: -4px;
+	font-size: 1.4em;
 	text-shadow: 0 1px 0 #fff;
 }
 
@@ -27,9 +28,8 @@ h1 {
 	font-family: "Vollkorn", Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
 	font-weight: 700;
-	font-size: 4em;
+	font-size: 3em;
 	color: #454c53;
-	text-shadow: 0 2px 0 #d2d1ce;
 	line-height: .8em;
 }
 
@@ -40,8 +40,8 @@ h1 a {
 h1 a:hover {
 	color: #454c53;
 	position: relative;
-	bottom: 2px;
-	text-shadow: 0 6px 0 #d2d1ce;
+	bottom: 4px;
+	text-shadow: 0 4px 0 #d2d1ce;
 }
 
 h1 a:active {
@@ -103,6 +103,17 @@ p {
 	-webkit-box-shadow: 0 1px 0 #913a38;
 	-moz-box-shadow: 0 1px 0 #913a38;
 	box-shadow: 0 1px 0 #913a38;
+}
+
+.email {
+	font-style: italic;
+	color: #555;
+	border-bottom: 2px solid #08c;
+}
+
+.email:hover {
+	color: #08c;
+	border-bottom: none;
 }
 
 /* -------- content --------*/
@@ -188,11 +199,11 @@ ul {
 	padding: 10px 10px 6px 10px;
 	background-color: #fff;
 	border: 1px solid #d2d1ce;
-	border-bottom: 1px solid #d2d1ce;
+	border-bottom-color: #d2d1ce;
 
-	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
-	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
-	box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
+	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #999;
+	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #999;
+	box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #999;
 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -203,29 +214,25 @@ ul {
 	position: relative;
 	bottom: 2px;
 
-	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #888;
-	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #888;
-	box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #888;
+	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #999;
+	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #999;
+	box-shadow: 0 3px 0 #d2d1ce, 0 9px 2px -1px #999;
 }
 
 .gallery li:active {
 	position: relative;
-	top: 5px;
+	top: 7px;
+	padding-bottom: 4px;
 
-	-webkit-box-shadow: none;
+	-webkit-box-shadow: 0 3px 0 #000;
 	-moz-box-shadow: none;
-	box-shadow: none;
+	box-shadow: inset 0 2px 3px -1px #999;
 }
 
 .gallery img {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-}
-
-.email {
-	letter-spacing: -20px;
-	float: right;
 }
 
 /*-------- post.html -------- */
@@ -265,4 +272,7 @@ ul {
 	h1 {
 		font-size: 2.5em;
 	}
+	header h2 {
+	font-size: 1.2em;
+}
 }
