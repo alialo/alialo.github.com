@@ -221,8 +221,7 @@ ul {
 
 .gallery li:active {
 	position: relative;
-	top: 7px;
-	padding-bottom: 4px;
+	top: 6px;
 
 	-webkit-box-shadow: 0 3px 0 #000;
 	-moz-box-shadow: none;
