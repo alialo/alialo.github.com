@@ -135,9 +135,9 @@ p {
 	background-color: #fff;
 	border: 1px solid #d2d1ce;
 
-	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
-	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
-	box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #555;
+	-webkit-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #999;
+	-moz-box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #999;
+	box-shadow: 0 3px 0 #d2d1ce, 0 5px 1px -1px #999;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -269,7 +269,7 @@ ul {
 		max-width: none;
 	}
 	h1 {
-		font-size: 2.5em;
+		font-size: 1.75em;
 	}
 	header h2 {
 	font-size: 1.2em;
