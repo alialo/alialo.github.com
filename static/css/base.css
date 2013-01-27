@@ -25,7 +25,7 @@ header h2 {
 h1 {
 	margin: 0;
 	margin-bottom: 20px;
-	font-family: "Vollkorn", serif;
+	font-family: "Vollkorn", Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
 	font-weight: 700;
 	font-size: 3em;
