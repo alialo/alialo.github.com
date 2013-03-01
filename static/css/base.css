@@ -63,6 +63,32 @@ p {
 	line-height: 1.4em;
 }
 
+blockquote {
+  color: #ababab;
+  border-left: 3px solid #e5e5e5;
+  padding-left: 0.5em;
+  margin: 0.5em;
+}
+
+blockquote {
+  quotes: '“' '”';
+}
+
+blockquote p:before {
+  content: '“';
+  content: open-quote;
+}
+
+blockquote p:after {
+  content: '';
+  content: no-close-quote;
+}
+
+blockquote p:last-child:after {
+  content: '”';
+  content: close-quote;
+}
+
 .bubble {
 	background-color: #08c;
 	color: #fff;
@@ -167,8 +193,21 @@ article p:last-of-type {
 
 #blog img {
 	display: block;
-	margin: 0 auto;
+	margin: 60px auto;
 	max-width: 100%;
+	border: 1px solid #dfdedc;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 #portfolio {
@@ -244,7 +283,7 @@ ul {
 }
 #post img {
 	display: block;
-	margin: 0 auto;
+	margin: 60px auto;
 	max-width: 100%;
 }
 
